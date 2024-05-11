@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    background-color: #e6e5f0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.main-box,.resultant-age{
+    background-color: #fff;
+    width: 70%;
+    height: 360px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: inset 0 0 20px 15px rgb(237 236 246);
+    display: flex;
+    margin-bottom: 50px;
+}
+.image img{
+    width: 100%;
+    height: 360px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.image{
+    width: 50%;
+}
+.content,.resultant-age{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 330px;
+    justify-content: space-evenly;
+}
+.age-box .age{
+    width: 100px;
+}
+.age-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.content input,.age h4 {
+    width: 50%;
+    height: 30px;
+}
+.resultant-age {
+    display: none;
+    box-sizing: border-box;
+    padding: 5%;
+    height: auto;
+}
+#total-age1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.age h3{
+    margin-right: 20px;
+}
+.date{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+.content p {
+    color: red;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: none;
+}
+.date label{
+    width: 20%;
+}
+.date input{
+    color: #fff;
+    background-color: rgb(85, 170, 245);
+    border: none;
+    padding: 5px 10px 5px 20px;
+    border-radius: 10px;
+}
+
+.date input::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+    padding: 10px;
+    cursor: pointer;
+}
+.content button{
+    text-decoration: none;
+    background-color:rgb(85, 170, 245);
+    width: 80%;
+    color: #fff;
+    height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 0 25px 0 ;
+    border: none;
+}
+.content button:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+}
+h1{
+    color: rgb(85, 170, 245);
+}
+
+@media screen and (max-width:920px) {
+    .date label {
+        width: 30%;
+    }
+}
+@media screen and (max-width:768px){
+    .main-box,.resultant-age{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .main-box{
+        flex-direction: column;
+        height: auto;
+    }
+    .image {
+        width: 100%;
+    }
+    .image img {
+        padding: 40px ;
+    }
+    .content{
+        width: 100%;
+    }
+    .content h1{
+        text-align: center;
+    }
+    .content button {
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width:450px) {
+    .age-box .age {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+
+    }
+}
+@media screen and (max-width : 300px) {
+    .date {
+        font-size: 12px;
+    }
+}
