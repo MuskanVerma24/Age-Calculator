@@ -1,7 +1,7 @@
-document.querySelector("#calculate").addEventListener("click", function () {
   var input_date = document.getElementById("birth-date");
   input_date.max = new Date().toISOString().split("T")[0];
 
+document.querySelector("#calculate").addEventListener("click", function () {
   var birth_date = new Date(input_date.value);
   var dobYear = birth_date.getFullYear();
   var dobMonth = birth_date.getMonth() + 1;
