@@ -31,6 +31,11 @@ document.querySelector("#calculate").addEventListener("click", function () {
   if (input_date.value != "" && user_input.value != "") {
     document.querySelector(".resultant-age").style.display = "block";
   }
+   if(input_date.value > user_input.value){
+    document.querySelectorAll(".date")[0].children[2].style.display = "block";
+    document.querySelector(".resultant-age").style.display = "none";
+  }
+
 
   var year, month, days, hours, minutes;
 
